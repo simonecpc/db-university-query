@@ -1,0 +1,14 @@
+-- 1
+SELECT * FROM departments WHERE head_of_department = 'Bernardo Sanna' ;
+-- 2 
+SELECT * FROM courses 
+-- 3 
+SELECT * FROM courses WHERE cfu > 10;
+-- 4 
+SELECT * FROM teachers WHERE phone IS NULL;
+-- 5 
+SELECT * FROM students WHERE TIMESTAMPDIFF(YEAR,date_of_birth ,CURDATE()) > 30;  
+-- 6 
+SELECT * FROM students WHERE email LIKE '%gmail%' OR '%yahoo%';
+-- 7 
+SELECT * FROM exams WHERE MONTH (`date`) = 7; 
